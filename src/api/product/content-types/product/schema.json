@@ -1,0 +1,71 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "Products",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "shortDescription": {
+      "type": "text"
+    },
+    "category1": {
+      "type": "enumeration",
+      "enum": [
+        "product",
+        "training"
+      ]
+    },
+    "category2": {
+      "type": "enumeration",
+      "enum": [
+        "self-care",
+        "therapy",
+        "biology",
+        "productivity",
+        "interpersonal"
+      ]
+    },
+    "basePrice": {
+      "type": "decimal"
+    },
+    "promo": {
+      "type": "decimal"
+    },
+    "img": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "sku": {
+      "type": "integer"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "specifics": {
+      "type": "blocks"
+    },
+    "imgUrl": {
+      "type": "string"
+    },
+    "imgAlt": {
+      "type": "string"
+    }
+  }
+}
